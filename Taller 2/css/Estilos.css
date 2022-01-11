@@ -21,6 +21,10 @@ header {
   display: block;
 }
 
+.Radio{
+margin-top: auto;
+}
+
 #Costos{
   width: 300px;
   margin: left;
