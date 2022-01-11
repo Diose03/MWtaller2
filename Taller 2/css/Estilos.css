@@ -1,0 +1,113 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: url(FONDO.jpg)
+
+}
+
+header {
+  height: 300px;
+}
+
+#Cabecera{
+  width: 600px;
+  margin: auto;
+  margin-top: 0px;
+  align-items: center;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#Costos{
+  width: 300px;
+  margin: left;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: block;
+}
+  nav {
+  background: #F3BBE2;
+  height: 400 px;
+  text-align:center;
+  }
+
+ nav a{
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 30px;
+  line-height: 3;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+nav a:hover{
+
+  background-color: #F591D6;
+  <!-- background: rgba(0, 0.1, 0, 0.2);-->
+}
+
+
+
+.Moda{
+  text-align:center;
+  color: white;
+  margin-top: 5px;
+  font-size: 50px;
+  background-color: #AD167F;
+}
+
+
+.Ropa{
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 100px;
+}
+
+
+.Container{
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Container .Card{
+  width: 330px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.Container .Card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Container .Card img{
+  margin-top: 15px;
+  width: 330px;
+  height: 250px;
+}
+
+.Container .Card h3{
+  font-weight: 600;
+  background: white;
+  font-family: serif;
+
+
+}

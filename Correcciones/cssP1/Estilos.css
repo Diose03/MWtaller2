@@ -1,0 +1,200 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: url(mosaic.jpg)
+
+}
+
+header {
+  height: 200px;
+}
+
+#Cabecera{
+  width: 790px;
+  margin: auto;
+  margin-top: 0px;
+  align-items: center;
+  margin-bottom: 20px;
+  display: block;
+}
+
+  nav {
+  background: red;
+  height: 60px;
+  text-align:center;
+  }
+
+ nav a{
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 30px;
+  line-height: 2.5;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+nav a:hover{
+
+  background-color: black;
+  <!-- background: rgba(0, 0.1, 0, 0.2);-->
+}
+
+.Slogan{ <!-- Para el bloque del artículo-->
+  width: 70px;
+  height: 80px;
+  float: left;
+  margin-top: 20px;
+  margin: auto;
+  display: inline-block;
+
+}
+
+.Divina{
+  text-align:center;
+  color: white;
+  margin-top: 20px;
+  margin-left:350;
+  font-size: 50px;
+  margin-left: 10px;
+
+}
+
+.Servicio{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.Nosotros{
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.Ub{
+  color: white;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.Ubicacion{
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-left: 40px;
+  margin-top: 120px;
+}
+
+.Ubicacion iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.Contacto {  <!-- Imagen de Contacto-->
+  position: absolute;
+  display: inline-block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  width: 767px;
+  height: 450px;
+}
+
+.Redes{
+  float: right;
+  width: 250px;
+  height: 250px;
+  margin-right: 120px;
+  margin-top: 73px;
+  margin-bottom: 10px;
+}
+
+.Sociales{ <!--Imagenes-->
+  list-style-type: none;
+  padding-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.Redes h7{
+  margin-left: 15px;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.Menu {   <!-- Imagen de Menu-->
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+  margin-left: 200px;
+
+}
+
+.Menu2 {
+  float: right;
+  margin-top: 30px;
+  margin-right: 200px;
+
+}
+
+.Container{
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Container .Card{
+  width: 330px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.Container .Card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Container .Card img{
+  margin-top: 15px;
+  width: 330px;
+  height: 250px;
+}
+
+.Container .Card h3{
+  font-weight: 600;
+  background: white;
+  font-family: serif;
+
+
+}
