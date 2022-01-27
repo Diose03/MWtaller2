@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejemplo JavaScript 3</title>
+        <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+        <header id="Cabecera">
+               <img src="Images/welcome3.jpg" alt="Bienvenida">
+       </header>
+
+       <nav>
+           <a href="Evidencia_4.1.html"> Inicio </a>
+           <!--<a href="#"> Acerca de </a>-->
+           <a href="Hombre.html"> Ropa hombre </a>
+           <a href="Mujer.html"> Ropa mujer </a>
+           <a href="#"> Contacto</a>
+       </nav>
+
+        <script language="JavaScript">
+          function pruebaWhilefor(){
+
+            for (var i = 0; i < 4; i=i+1) {
+              alert("Hola voy en el " + i);
+            }
+            var o=0;
+            while(o<=4){
+              alert("Ahora con while " + o);
+              o++;
+            }
+          }
+          function validaEdad(edad){
+              var otraEdad=document.getElementById('edad');
+              alert("Tu edad es" + edad + otraEdad.value);
+
+              if(edad <= 17){
+                alert("Se requiere autorización de tus padres");
+              } else if (edad<= 60) {
+                alert("Eres adulto");
+              } else {
+                alert("Ya eres adulto mayor");
+              }
+          }
+
+          function validaFormulario(){
+            alert("Empece la validación");
+            document.datosPersonales.telefono.value="123124123";
+            document.datosPersonales.direccion.cols="60";
+            document.datosPersonales.submit();
+          }
+        </script>
+    </head>
+    <body>
+      <form name="datosPersonales" action="guardar.html" method="post">
+        <label for="nombre">Ingresa tu nombre(s) </label>
+          <input name="nombre"  type="text" required>
+        <br>
+        <label for="apellidop">Ingresa tu nombre apellido paterno</label>
+          <input name="apellidop"  type="text"><br>
+        <label for="apellidom">Ingresa tu nombre apellido materno</label>
+          <input name="apellidom" type="text" > <br>
+        <label for="telefono">Telefono</label>
+          <input name="telefono" type="text">
+        <label for="direccion" class="labelTexto">Ingresa tu dirección completa</label>
+        <textarea name="direccion" cols="10" rows="10">Ejemplo de dirección</textarea>
+        <br>
+        <label for="edad">Ingresa tu edad</label>
+        <select id="edad" name="edad" onchange="validaEdad(this.value);">
+            <option value="16">Dieciseis</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+        </select>
+        <br>
+        <label for="sexo">Selecciona tu genero</label>
+        <select id="sexo" name="sexo">
+          <option value="H">Hombre</option>
+          <option value="M">Mujer</option>
+        </select>
+        <br>
+        <label for="fechaNac" class="labelTexto">Selecciona tu fecha de Nacimiento</label>
+        <input name="fechaNac" type="datetime">
+        <br>
+        <label for="color">Elige tu color favorito</label>
+        <input name="color" type="color" value="#FFF666">
+        <br>
+        <label for="prefiero">¿Prefieres un plátano o una cereza?</label>
+          <input name="prefiero" required>
+          <input type="button" name="valida" value="Revisar" onclick="validaFormulario();">
+          <button onclick="pruebaWhilefor();">prueba ciclos</button>
+          <input type="submit" value="Guardar Datos">
+      </form>
+    </body>
+</html>

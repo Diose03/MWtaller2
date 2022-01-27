@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Ureshii Boutique</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+    <body>
+      <header id="Cabecera">
+             <img src="Images/welcome3.jpg" alt="Bienvenida">
+     </header>
+
+     <nav>
+         <a href="Evidencia_4.1.html"> Inicio </a>
+         <!--<a href="#"> Acerca de </a>-->
+         <a href="Hombre.html"> Ropa hombre </a>
+         <a href="Mujer.html"> Ropa mujer </a>
+         <a href="Contacto.html"> Contacto</a>
+     </nav> <br><br>
+
+     <section id="Example">
+           <article>
+           <h2 class="Moda">Escríbenos y en breve los pondremos en contacto contigo</h2>
+           </article>
+     </section>
+
+
+
+     <div class="contact_form">
+
+     <form name="datosPersonales" action="guardar.html" method="post">
+       <label for="nombre">Nombre(s) * </label>
+         <input name="nombre"  type="text" required>
+       <br> <br>
+       <label for="apellidop">Apellido paterno *</label>
+         <input name="apellidop"  type="text" required><br>  <br>
+       <label for="apellidom">Apellido materno *</label>
+         <input name="apellidom" type="text" required> <br>  <br>
+       <label for="telefono">Telefono *</label>
+         <input name="telefono" type="text" required> <br><br>
+       <label for="direccion" class="labelTexto">Ingresa tu dirección completa *</label><br>
+       <textarea name="direccion" cols="10" rows="5" required>Dirección</textarea>
+       <br>
+       <label for="edad">Ingresa tu edad *</label>
+       <br><br>
+       <label for="sexo">Selecciona tu genero:</label>
+       <select id="prenda" name="tipo">
+         <option value="V"> </option>
+         <option value="H">Hombre</option>
+         <option value="M">Mujer</option>
+       </select> <br><br>
+
+       <label for="date">Fecha envio: </label>
+       <input type="date">  <br><br>
+       <label for="message">Mensaje:</label> <br>
+       <textarea name="message" cols="40" rows="6" required></textarea>
+       <br><br>
+       <label for="prefiero">¿Deseas guardar mensaje?</label>
+         <input type="button" name="guardar" value="Ok" onclick="validaFormulario();">
+
+         <input type="submit" value="Guardar Datos">
+     </form>
+
+   </div>
+
+   </body>
+
+</html>

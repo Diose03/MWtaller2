@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Ureshii Boutique</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+    <body>
+      <header id="Cabecera">
+             <img src="Images/welcome3.jpg" alt="Bienvenida">
+     </header>
+
+     <nav>
+         <a href="Evidencia_4.1.html"> Inicio </a>
+         <!--<a href="#"> Acerca de </a>-->
+         <a href="Hombre.html"> Ropa hombre </a>
+         <a href="Mujer.html"> Ropa mujer </a>
+         <a href="Contacto.html"> Contacto</a>
+     </nav> <br><br>
+
+     <section id="Example">
+           <article>
+           <h2 class="Moda">¡Cotiza tus compras!</h2>
+           </article>
+     </section>
+
+     <div class="contact_form">
+
+     <form name="Carrito" action="guardar.html" method="get">
+       <label for="prenda">Prenda para: * </label>
+       <select id="prenda" name="tipo">
+         <option value="V"> </option>
+         <option value="H">Hombre</option>
+         <option value="M">Mujer</option>
+       </select> <br><br>
+
+       <label for="nombre">Tipo de prenda: * </label>
+       <input type="text" name="nombre" required>
+       <br> <br>
+
+       <label for="talla">Talla:*</label>
+       <select id="talla" name="talla" required>
+         <option value="XCH">XCH</option>
+         <option value="CH">CH</option>
+         <option value="M">M</option>
+         <option value="G">G</option>
+         </select> <br><br>
+
+         <label for="precio">Costo:*</label>
+         <input type="text" id="costo_prenda" required>
+         <br><br>
+
+         <label for="cantidad">Cantidad:*</label>
+         <!--<input type="text" id="cantidad" required>-->
+         <select id="cantidad" name="talla" required>
+           <option value=" "> </option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           </select> <br><br>
+
+          <button type="button" onclick="precio()">Consultar</button> <br> <br>
+
+          <label for="total">Total:</label>
+          <input type="text" id="resultado">
+          <br><br>
+          <p class="aviso">
+          <span class="obligatorio"> * </span>los campos son obligatorios.
+
+     </form>
+     </div>
+         <script>
+           function precio(){
+           var costo_prenda =parseInt(document.getElementById("costo_prenda").value);
+           var cantidad =parseInt(document.getElementById("cantidad").value);
+           if (isNaN(costo_prenda) || isNaN(cantidad)) {
+           alert("Es necesarios introducir datos");
+           } else {
+           var precio = costo_prenda * cantidad;
+           }
+           document.getElementById("resultado").value=precio;
+
+            }
+          </script>
+   </body>
+
+</html>

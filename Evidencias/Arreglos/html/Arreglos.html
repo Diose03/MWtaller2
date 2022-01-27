@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Arreglos</title>
+</head>
+    <body>
+     <<script language="javascript">
+
+     //Creando dos arreglos.
+     var prendas_mujer,prendas_hombre;
+     prendas_mujer=["blusa", "playera", "vestido", "falda", "pantalon", "pants"];
+     prendas_hombre=["camisa", "camiseta", "pantalon", "bermuda", "pants", "sudadera"];
+
+     //Calcular el tamaño del arreglo.
+     alert("Prendas de mujer: " + prendas_mujer.length);
+     alert("Prendas de hombre: " + prendas_hombre.length);
+
+     //Meter un elemento al final de cada arreglo.
+     prendas_mujer.push("sudadera");
+     prendas_hombre.push("chamarra");
+
+     console.log("Las prendas de mujer después del push son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del push son: " + prendas_hombre);
+     /*alert("Las prendas de mujer después del push son: " + prendas_mujer);
+     alert("Prendas de mujer: " + prendas_mujer.length);
+     alert("Las prendas de hombre después del push son: " + prendas_hombre);
+     alert("Prendas de mujer: " + prendas_hombre.length);*/
+
+     //Sacar un elemento del final de cada arreglo.
+     prendas_mujer.pop();
+     prendas_hombre.pop();
+     console.log("Las prendas de mujer después del pop son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del pop son: " + prendas_hombre);
+
+     //Meter un elemento al inicio.
+     prendas_mujer.unshift("ZAPATILLAS");
+     prendas_hombre.unshift("TENNIS");
+     console.log("Las prendas de mujer después del unshift son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del unshift son: " + prendas_hombre);
+
+     //Sacar un elemento del inicio.
+     prendas_mujer.shift("ZAPATILLAS");
+     prendas_hombre.shift("TENNIS");
+     console.log("Las prendas de mujer después del shift son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del shift son: " + prendas_hombre);
+
+     //Ordenarlo.
+     prendas_mujer.sort();
+     prendas_hombre.sort();
+     console.log("Las prendas de mujer después del sort son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del sort son: " + prendas_hombre);
+
+     //Ponerlo en reversa.
+     prendas_mujer.reverse();
+     prendas_hombre.reverse();
+     console.log("Las prendas de mujer después del reverse son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del reverse son: " + prendas_hombre);
+
+     //Copiar una porción del arreglo.
+     prendas_mujer.slice(0,3);
+     prendas_hombre.slice(1,4);
+     console.log("Las prendas de mujer después del slice son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del slice son: " + prendas_hombre);
+
+     //Agregar, reemplazar y eliminar elementos.
+     prendas_mujer.splice(0,3,'NUEVO_MODELO');
+     prendas_hombre.splice(1,4,'NUEVO_ESTILO');
+     console.log("Las prendas de mujer después del push son: " + prendas_mujer);
+     console.log("Las prendas de hombre después del push son: " + prendas_hombre);
+
+     //Concatenar ambos arreglos.
+     const prendas = prendas_mujer.concat(prendas_hombre);
+     //console.log(prendas);
+     console.log("Las prendas después de concatenar ambos arreglos son: " + prendas);
+
+
+     </script>
+
+   </body>
+
+</html>
